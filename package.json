@@ -1,0 +1,10 @@
+{
+  "name": "team-task-manager",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build --prefix backend",
+    "start": "npm start --prefix backend",
+    "dev": "npm run dev --prefix backend"
+  }
+}

@@ -85,8 +85,9 @@ This app is ready to be deployed on Railway!
 1. Create a new project on Railway.
 2. Provision a **MongoDB** database in your Railway project.
 3. Connect your GitHub repository containing this code.
-4. Railway will auto-detect the Node.js backend. For the frontend to build, you might need to adjust the root directory or deploy them as separate services depending on your mono-repo setup.
-5. In your Railway service settings, add the environment variables matching the `.env` file (using the internal Railway MongoDB URL).
-6. Deploy!
+4. Set the service root directory to the repository root, not `backend/`.
+5. Use `npm run build` as the build command and `npm start` as the start command.
+6. In your Railway service settings, add the environment variables matching the `.env` file (using the internal Railway MongoDB URL).
+7. Deploy!
 
 *Note: The `server.js` file is already configured to serve the static built React frontend when `NODE_ENV=production`.*
