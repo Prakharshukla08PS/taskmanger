@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Build outputs
+backend/dist/
+backend/build/
+frontend/dist/
+frontend/build/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environment & secrets
+.env
+.env.*
+*.local
+
+# Editor/OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+
+# Misc
+*.pid

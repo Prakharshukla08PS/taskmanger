@@ -1,0 +1,27 @@
+{
+  "name": "team-task-manager-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Team Task Manager - A full-stack project & task management app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npx nodemon server.js",
+    "build": "npm install --omit=dev && npm install --prefix ../frontend && npm run build --prefix ../frontend && rm -rf ./public/* && cp -r ../frontend/dist/* ./public/"
+  },
+  "keywords": ["task-manager", "project-management", "express", "mongodb"],
+  "author": "Team Task Manager",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
